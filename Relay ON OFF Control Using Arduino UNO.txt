@@ -1,0 +1,22 @@
+/*
+ Relay Control Program
+ This program turns a relay ON and OFF with a delay.
+ Written as part of basic Arduino practice.
+*/
+
+const int RELAY_PIN = 8;
+
+void setup() {
+  // Set relay pin as output
+  pinMode(RELAY_PIN, OUTPUT);
+}
+
+void loop() {
+  // Turn relay ON
+  digitalWrite(RELAY_PIN, HIGH);
+  delay(1000);   // wait for 1 second
+
+  // Turn relay OFF
+  digitalWrite(RELAY_PIN, LOW);
+  delay(500);    // wait for 0.5 second
+}
